@@ -1,0 +1,70 @@
+/* ~/.config/swaync/style.css */
+
+/* 1. The Main Notification Window */
+.control-center {
+    background: #1e1e2e; /* Base Color */
+    border: 2px solid #89b4fa; /* Blue Border */
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+}
+
+/* 2. The Notification Bubbles */
+.notification-row {
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.notification {
+    background: #11111b; /* Darker Crust */
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #313244;
+}
+
+/* 3. Text Colors */
+.summary {
+    color: #89b4fa; /* Blue Title */
+    font-weight: bold;
+}
+
+.body {
+    color: #cdd6f4; /* White-ish Text */
+}
+
+.time {
+    color: #a6adc8; /* Grey Time */
+}
+
+/* 4. The "Do Not Disturb" Toggle */
+.widget-dnd {
+    background: #11111b;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.widget-dnd > switch {
+    background: #313244;
+    border-radius: 12px;
+}
+
+.widget-dnd > switch:checked {
+    background: #f38ba8; /* Red when DND is ON */
+}
+
+/* 5. Music Player in Notification Center */
+.widget-mpris {
+    background: #11111b;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.widget-mpris-title {
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+    color: #cdd6f4;
+}

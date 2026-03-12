@@ -1,0 +1,154 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    margin: 5px;
+    padding: 0 5px;
+    border-radius: 16px;
+    border: 0px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #7f849c;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#bluetooth,
+#pulseaudio,
+#tray,
+#mode,
+#idle_inhibitor {
+    padding: 0 10px;
+    margin: 5px 2px;
+    color: #cdd6f4;
+    background: #1e1e2e;
+    border-radius: 16px;
+}
+
+#clock {
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #fab387;
+}
+
+#battery.critical {
+    color: #f38ba8;
+}
+
+#network {
+    color: #f9e2af;
+}
+
+#bluetooth {
+    color: #89b4fa;
+}
+
+#pulseaudio {
+    color: #cba6f7;
+}
+
+#pulseaudio.muted {
+    color: #a6adc8;
+}
+
+
+/* --- MUSIC PLAYER (Unified Pill Style) --- */
+
+#group-audio {
+    background-color: #1e1e2e; /* The Grey color matching Clock/Battery */
+    color: #cdd6f4;
+    padding: 0 10px;           /* Comfortable padding */
+    margin: 5px 2px;           /* Spacing from other modules */
+    border-radius: 16px;       /* Round pill shape */
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+}
+
+/* The Icon itself */
+#custom-music-icon {
+    color: #f9e2af; /* Yellow */
+    padding-right: 5px;
+    margin-right: 5px; /* Tiny gap between icon and text */
+}
+
+/* The Song Text (Artist - Title) */
+#custom-song-info {
+    color: #cba6f7; /* Mauve */
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* The Controls */
+#custom-prev, #custom-next {
+    color: #89b4fa; /* Blue */
+    padding: 0 5px;
+}
+
+#custom-play {
+    color: #a6e3a1; /* Green */
+    font-weight: 900;
+    padding: 0 5px;
+}
+
+/* Fix for the drawer content spacing */
+#group-audio .audio-drawer {
+    margin-left: 2px;
+}
+
+#custom-notification {
+    background-color: #1e1e2e; /* Same background as others */
+    color: #b4befe;            /* Lavender color for the bell */
+    padding: 0 10px;           /* Padding inside the pill */
+    margin: 5px 2px;           /* Spacing outside */
+    border-radius: 16px;       /* Rounded corners */
+    font-size: 16px;
+}
+
+/* Optional: Make it turn Red when you have unread notifications */
+#custom-notification.notification {
+    color: #f38ba8; /* Red */
+}
